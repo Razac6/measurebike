@@ -28,10 +28,21 @@ body{
   border-radius: 0;
 }
 
-.jumbotron,.list-group{
+.jumbotron.list-group{
   border-radius: 0;
   background-color: #ffffff;
 
 }
 
+.jumbotron{
+  background-color: transparent;
+}
+
+
+
+
+
+.navbar{
+  background-color: #000000;
+}
 

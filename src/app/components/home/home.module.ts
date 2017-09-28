@@ -7,11 +7,11 @@ import {HomeFormComponent} from './home-form/home-form.component';
 @NgModule({
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
   ],
   declarations: [
     HomePageComponent,
     HomeFormComponent,
-  ]
+  ],
 })
 export class HomeModule { }

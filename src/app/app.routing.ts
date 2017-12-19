@@ -1,4 +1,4 @@
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {HomePageComponent} from './components/home/home-page/home-page.component';
 import {Error404Component} from './components/exeptions/error-404/error-404.component';
 
@@ -8,5 +8,5 @@ const routesConfig: Routes = [
 ];
 
 export const routerModule = RouterModule.forRoot(routesConfig, {
-  enableTracing: true
+  enableTracing: false
 });

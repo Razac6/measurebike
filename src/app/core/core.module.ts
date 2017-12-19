@@ -3,8 +3,9 @@ import {NgModule} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {AppComponent} from '../app.component';
 import {HomeModule} from '../components/home/home.module';
-import { routerModule } from '../app.routing';
+import {routerModule} from '../app.routing';
 import {ExeptionsModule} from '../components/exeptions/exeptions.module';
+import {PerformModule} from '../components/perform/perform.module';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import {ExeptionsModule} from '../components/exeptions/exeptions.module';
     FormsModule,
     HomeModule,
     routerModule,
-    ExeptionsModule
+    ExeptionsModule,
+    PerformModule
 
   ],
   providers: [],

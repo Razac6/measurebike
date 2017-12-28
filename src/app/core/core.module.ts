@@ -1,11 +1,12 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {FormsModule} from '@angular/forms';
-import {AppComponent} from '../app.component';
-import {HomeModule} from '../components/home/home.module';
-import {routerModule} from '../app.routing';
-import {ExeptionsModule} from '../components/exeptions/exeptions.module';
-import {PerformModule} from '../components/perform/perform.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { AppComponent } from '../app.component';
+import { HomeModule } from '../components/home/home.module';
+import { routerModule } from '../app.routing';
+import { ExeptionsModule } from '../components/exeptions/exeptions.module';
+import { PerformModule } from '../components/perform/perform.module';
+import { ShareModule } from '../share/components/share.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import {PerformModule} from '../components/perform/perform.module';
     HomeModule,
     routerModule,
     ExeptionsModule,
-    PerformModule
+    PerformModule,
+    ShareModule
 
   ],
   providers: [],

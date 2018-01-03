@@ -7,6 +7,8 @@ import { routerModule } from '../app.routing';
 import { ExeptionsModule } from '../components/exeptions/exeptions.module';
 import { PerformModule } from '../components/perform/perform.module';
 import { ShareModule } from '../share/components/share.module';
+import { HttpClientModule } from '@angular/common/http';
+import { PartsService } from '../share/services/parts.service';
 
 
 @NgModule({
@@ -20,10 +22,11 @@ import { ShareModule } from '../share/components/share.module';
     routerModule,
     ExeptionsModule,
     PerformModule,
-    ShareModule
+    ShareModule,
+    HttpClientModule
 
   ],
-  providers: [],
+  providers: [PartsService],
   bootstrap: [AppComponent]
 })
 export class CoreModule {

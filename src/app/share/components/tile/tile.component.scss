@@ -1,0 +1,37 @@
+.bg-secondary.first {
+  background: url("../../../../assets/img/josh-nuttall-351981.jpg");
+  background-size: cover;
+  height: 350px;
+  width: 350px;
+
+  &:hover {
+    -webkit-filter: grayscale(1);
+    -webkit-filter: grayscale(100%);
+    filter: gray;
+    filter: grayscale(100%);
+    transition: 0.3s;
+  }
+}
+
+.bg-secondary.second {
+  @extend .bg-secondary.first;
+  background: url("../../../../assets/img/FrontShock.jpg");
+}
+
+.bg-secondary.third {
+  @extend .bg-secondary.first;
+  background: url("../../../../assets/img/FrontShock.jpg");
+}
+
+a {
+  &:hover {
+    text-underline: none;
+    text-decoration: none;
+  }
+
+}
+
+.btn.btn-secondary.btn-lg.btn-block {
+  position: absolute;
+  bottom: 0;
+}

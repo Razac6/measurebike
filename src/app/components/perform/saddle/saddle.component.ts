@@ -1,5 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {SaddleModel} from '../../../models/saddle.model';
+import { Component, OnInit } from '@angular/core';
+import { SaddleModel } from '../../../models/saddle.model';
+import { PartsService } from '../../../share/services/parts.service';
+import { PartModel } from '../../../models/part.model';
 
 @Component({
   selector: 'app-saddle',
@@ -13,11 +15,17 @@ export class SaddleComponent implements OnInit {
     width: 10,
     height: 5,
   };
-  constructor() {
+
+  result: PartModel;
+
+  constructor(private partsService: PartsService) {
   }
 
   ngOnInit() {
-    console.log(this.message.name);
+    return this.partsService.getPart().subscribe(data => {
+      this.result = data;
+      console.log(this.result);
+    });
   }
 
 

@@ -12,7 +12,6 @@ export class PartsService {
 
   getPart() {
     return this.http.get<PartModel>(`http://localhost:1337/test`)
-      .map((res) => res);
   }
 
 }

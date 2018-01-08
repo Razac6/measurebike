@@ -9,6 +9,7 @@ import { PerformModule } from '../components/perform/perform.module';
 import { ShareModule } from '../share/components/share.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PartsService } from '../share/services/parts.service';
+import { StravaService } from '../share/services/strava.service';
 
 
 @NgModule({
@@ -26,7 +27,7 @@ import { PartsService } from '../share/services/parts.service';
     HttpClientModule
 
   ],
-  providers: [PartsService],
+  providers: [PartsService, StravaService],
   bootstrap: [AppComponent]
 })
 export class CoreModule {

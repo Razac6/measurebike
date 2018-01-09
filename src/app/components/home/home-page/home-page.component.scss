@@ -80,3 +80,12 @@ section.home{
   height: 100vh;
   background-size: cover;
 }
+
+p.strava img {
+  position: absolute;
+  left: 50%;
+  bottom: 30%;
+  width: 10rem;
+  /* top: 50%; */
+  transform: translate3d(-50%, -50%, 0);
+}

@@ -10,6 +10,7 @@ import { ShareModule } from '../share/components/share.module';
 import { HttpClientModule } from '@angular/common/http';
 import { PartsService } from '../share/services/parts.service';
 import { StravaService } from '../share/services/strava.service';
+import { TreningModule } from '../components/trening/trening.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { StravaService } from '../share/services/strava.service';
     ExeptionsModule,
     PerformModule,
     ShareModule,
-    HttpClientModule
+    HttpClientModule,
+    TreningModule
 
   ],
   providers: [PartsService, StravaService],
